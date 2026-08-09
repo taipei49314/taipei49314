@@ -37,6 +37,7 @@ evidence-backed standards diffs.
 | [receiptradar](https://github.com/taipei49314/receiptradar) | [`v0.1.0-cli.34`](https://github.com/taipei49314/receiptradar/releases/tag/v0.1.0-cli.34) — four-platform CLI release with packaged checksums |
 | [github-radar](https://github.com/taipei49314/github-radar) | [`v0.1.0`](https://github.com/taipei49314/github-radar/releases/tag/v0.1.0) — reproducible stdlib-only alpha with bounded coverage claims |
 | [FutureShow-pet](https://github.com/taipei49314/FutureShow-pet) | [`v0.1.0`](https://github.com/taipei49314/FutureShow-pet/releases/tag/v0.1.0) — personal Windows alpha; Loop 10 and long-soak automation remain open |
+| [nelson-release-studio](https://github.com/taipei49314/nelson-release-studio) | [`v1.0.0`](https://github.com/taipei49314/nelson-release-studio/releases/tag/v1.0.0) — verified Windows-first local release workbench |
 
 ## Active qualification tracks
 
