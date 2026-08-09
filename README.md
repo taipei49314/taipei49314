@@ -1,57 +1,84 @@
-# 👋 Nelson
+# Nelson — evidence-first agent systems
 
-**Local-first · deterministic · evidence-first** tools for AI agents and developer systems.
+I build **local-first, deterministic, auditable** tools for AI agents and
+developer workflows.
 
-本機優先、決定性、證據優先——為 AI agent 與開發系統打造可稽核的工具。
+我在台灣打造本機優先、可重播、可稽核的 AI agent 與開發工具。
 
-📍 Taiwan
+> **Models may propose. Verifiers decide. Missing evidence stays
+> `UNKNOWN` / `INCOMPLETE`.**
 
----
+[Explore the full Nelson Stack →](https://github.com/taipei49314/nelson-stack)
 
-## 🧭 Principles / 原則
+## The audit loop
 
-| | |
+| Stage | Project | Question |
+|---|---|---|
+| Detect | [**greenwash**](https://github.com/taipei49314/greenwash) | Did an agent make CI green by weakening verification? |
+| Re-run | [**RepoPassport**](https://github.com/taipei49314/RepoPassport) | Did the declared journey work within its capabilities and clean up after itself? |
+| Reproduce | [**stateweaver**](https://github.com/taipei49314/stateweaver) | Can an independent verifier replay the finding against a clean state? |
+| Forecast | [**tomorrowci**](https://github.com/taipei49314/tomorrowci) | When will dependency or runtime drift invalidate today’s evidence? |
+
+Supporting evaluation surfaces include
+[null-city](https://github.com/taipei49314/null-city) for deterministic crisis
+response and [NormShift](https://github.com/taipei49314/NormShift) for
+evidence-backed standards diffs.
+
+## Released
+
+| Project | Current public status |
 |---|---|
-| **Deterministic first** | Prefer tools that give the same answer twice. No silent LLM at runtime unless the product *is* the model. |
-| **Evidence over vibe** | Conclusions must point to artifacts, diffs, logs, or data — or say *Insufficient data*. |
-| **Local-first** | Prefer Ollama / local runtimes and offline-capable CLIs over cloud keys when possible. |
-| **Honest scope** | Research and lab projects stay research. No fake “production ready” claims. |
+| [greenwash](https://github.com/taipei49314/greenwash) | [`v0.1.14`](https://github.com/taipei49314/greenwash/releases/tag/v0.1.14) — deterministic diff-level verification-tampering detector |
+| [null-city](https://github.com/taipei49314/null-city) | [`v0.1.0-alpha.1`](https://github.com/taipei49314/null-city/releases/tag/v0.1.0-alpha.1) — playable deterministic agent-evaluation sandbox |
+| [tomorrowci](https://github.com/taipei49314/tomorrowci) | [`v0.1.0-grok-session`](https://github.com/taipei49314/tomorrowci/releases/tag/v0.1.0-grok-session) — experimental future-breakage scanner and replay bundle |
+| [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | [`v0.1.1-alpha.2`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.1.1-alpha.2) — measured lab release with explicit `NOT_RUN` boundaries |
+| [md-brain](https://github.com/taipei49314/md-brain) | [`v0.2.0`](https://github.com/taipei49314/md-brain/releases/tag/v0.2.0) — public prototype for model-independent Markdown continuity |
+| [aurora](https://github.com/taipei49314/aurora) | [`v0.1.47`](https://github.com/taipei49314/aurora/releases/tag/v0.1.47) — alpha evidence engine; observations, not investment claims |
+| [receiptradar](https://github.com/taipei49314/receiptradar) | [`v0.1.0-cli.34`](https://github.com/taipei49314/receiptradar/releases/tag/v0.1.0-cli.34) — four-platform CLI release with packaged checksums |
+| [github-radar](https://github.com/taipei49314/github-radar) | [`v0.1.0`](https://github.com/taipei49314/github-radar/releases/tag/v0.1.0) — reproducible stdlib-only alpha with bounded coverage claims |
+| [FutureShow-pet](https://github.com/taipei49314/FutureShow-pet) | [`v0.1.0`](https://github.com/taipei49314/FutureShow-pet/releases/tag/v0.1.0) — personal Windows alpha; Loop 10 and long-soak automation remain open |
+| [nelson-release-studio](https://github.com/taipei49314/nelson-release-studio) | [`v1.0.0`](https://github.com/taipei49314/nelson-release-studio/releases/tag/v1.0.0) — verified Windows-first local release workbench |
 
----
+## Active qualification tracks
 
-## 📌 Featured / 精選
+| Project | Honest boundary |
+|---|---|
+| [RepoPassport](https://github.com/taipei49314/RepoPassport) | Working `v1alpha1` vertical slice; observer coverage remains `incomplete`, so healthy runs stay `inconclusive` |
+| [stateweaver](https://github.com/taipei49314/stateweaver) | Source-only pre-alpha; synthetic/local evidence exists, trusted Reality proof does not |
+| [NormShift](https://github.com/taipei49314/NormShift) | M0 implemented; production and release remain blocked pending external audit |
+| [nelsoncode-ide](https://github.com/taipei49314/nelsoncode-ide) | Personal preview; external security audit remains **NO-GO** for untrusted use |
+
+## Local-first tools
 
 | Project | What it does |
 |---|---|
-| [**greenwash**](https://github.com/taipei49314/greenwash) | Catch the agent that made CI green by *weakening the tests*. Deterministic, zero-LLM, zero-network, sub-second. |
-| [**tomorrowci**](https://github.com/taipei49314/tomorrowci) | CI against the future — earliest concrete dependency/runtime breakage horizon with replayable evidence. |
-| [**RepoPassport**](https://github.com/taipei49314/RepoPassport) | Local-first, capability-aware repo scenario verification & supply-chain evidence (SBOM / DSSE-oriented). |
-| [**stateweaver**](https://github.com/taipei49314/stateweaver) | Reality-tethered, state-first security research for authorized synthetic labs. |
-| [**nelsoncode-ide**](https://github.com/taipei49314/nelsoncode-ide) | Personal AI coding IDE — timeline as backbone, reversible. Powered by opencode (no fork). |
-| [**md-brain**](https://github.com/taipei49314/md-brain) | Local-first, model-independent continuity runtime for AI memory. |
+| [md-brain](https://github.com/taipei49314/md-brain) | Model-independent continuity runtime for Markdown memory |
+| [github-radar](https://github.com/taipei49314/github-radar) | GitHub research with measured uncertainty and zero runtime dependencies |
+| [aurora](https://github.com/taipei49314/aurora) | Finds unnamed industries from evidence, with no LLM at runtime |
+| [receiptradar](https://github.com/taipei49314/receiptradar) | Receipt-to-ledger CLI with no cloud account |
+| [nelson-release-studio](https://github.com/taipei49314/nelson-release-studio) | Windows-first music, asset, lyric-video, and release-package workbench |
+| [FutureShow-pet](https://github.com/taipei49314/FutureShow-pet) | Personal Windows desktop pet with Taiwan and GitHub information loops |
 
-### Also on the bench / 實驗中
+## Engineering rules
 
-| Project | Note |
-|---|---|
-| [null-city](https://github.com/taipei49314/null-city) | Deterministic, partially observable crisis-response sandbox |
-| [NormShift](https://github.com/taipei49314/NormShift) | Evidence-backed semantic diff for technical standards |
-| [github-radar](https://github.com/taipei49314/github-radar) | GitHub trend research with measured uncertainty (stdlib-only) |
-| [aurora](https://github.com/taipei49314/aurora) | Find unnamed industries from evidence — no LLM at runtime |
-| [receiptradar](https://github.com/taipei49314/receiptradar) | Local-first receipt → ledger CLI. No cloud. No account. |
+1. **Deterministic first.** The same evidence should produce the same verdict.
+2. **Evidence over vibe.** Claims point to tests, diffs, logs, artifacts, or an
+   explicit insufficient-data result.
+3. **Fail closed.** Missing observation is not a pass; capability violations
+   outrank functional success.
+4. **Local first.** Prefer loopback services, offline-capable CLIs, and local
+   runtimes over mandatory cloud accounts.
+5. **Keep the failures.** Negative controls, blocked gates, and NO-GO verdicts
+   remain visible instead of being rewritten as success.
 
----
+## Stack
 
-## 🛠 Stack
+`Python` · `Rust` · `Go` · `TypeScript` · `FastAPI` · `React` · `Electron` ·
+`SQLite` · `Ollama`
 
-`Python` · `TypeScript` · `Rust` · `Go` · `FastAPI` · `React` · `Ollama`
+Older market, persona, creative-production, and agent-console experiments are
+kept private or archived when they stop being the active line. Market-related
+projects are paper-only research simulations, never broker or investment
+systems.
 
----
-
-## 🗺 How I work / 工作方式
-
-1. **Ship vertical slices** — M0 that runs beats a slide deck.
-2. **Prefer replayable evidence** — tests, fixtures, diffs, ledgers.
-3. **Archive ruthlessly** — old stock/research desks stay private or archived; public surface is tools & systems.
-
-<sub>Trading / market-related experiments (if any) are paper-only research simulations, not investment advice.<br>交易相關實驗僅為研究模擬，非投資建議。</sub>
+<sub>Last portfolio reconciliation: 2026-08-09.</sub>
