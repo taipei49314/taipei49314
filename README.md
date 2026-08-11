@@ -10,6 +10,8 @@ developer workflows.
 
 [Explore the full Nelson Stack →](https://github.com/taipei49314/nelson-stack)
 
+![phaseledger attach session](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/attach.gif)
+
 ## Now
 
 The active line is **measure before you trust**:
@@ -22,6 +24,8 @@ No GitHub Release yet for the first two. Lab publication remains a measured
 pre-alpha with explicit `NOT_RUN` / `BLOCKED` rows.
 
 ## The audit loop
+
+![Audit loop with honest gaps](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/audit-loop.gif)
 
 | Stage | Project | Question |
 |---|---|---|
