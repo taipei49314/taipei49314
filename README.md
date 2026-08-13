@@ -10,19 +10,20 @@ developer workflows.
 
 [Explore the full Nelson Stack →](https://github.com/taipei49314/nelson-stack)
 
-![phaseledger attach session](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/attach.gif)
+![Admission then measure — unsigned walkaround, refused advance](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/attach.gif)
 
 ## Now
 
-The active line is **measure before you trust**:
+The active line is **admit, then measure**:
 
+- [`walkaround`](https://github.com/taipei49314/walkaround) asks whether the session entered a frozen contract. Done without entry is `BYPASSED`. Receipts are unsigned; no `VERIFIED`.
+- [`charterlock`](https://github.com/taipei49314/charterlock) asks whether that journey was allowed to be the exam. Same key writing and sitting it is `CHARTER_COLLAPSED`. Two MAC keys do not prove two people.
 - [`trust-meter`](https://github.com/taipei49314/trust-meter) scores a checkout from evidence.
 - [`phaseledger`](https://github.com/taipei49314/phaseledger) refuses to advance a phase without a fresh measurer `PASS`.
 - [`nullbench`](https://github.com/taipei49314/nullbench) pre-registers decisions and scores them against chance — never backfill.
-- [`tomorrowci-lab`](https://github.com/taipei49314/tomorrowci-lab) asks when today's evidence stops being current.
 
-No GitHub Release yet for `trust-meter` / `phaseledger`. Lab publication remains a
-measured pre-alpha with explicit `NOT_RUN` / `BLOCKED` rows.
+No GitHub Release for `walkaround` / `charterlock` / `trust-meter` / `phaseledger`.
+Lab publication remains a measured pre-alpha with explicit `NOT_RUN` / `BLOCKED` rows.
 
 ## The audit loop
 
@@ -30,6 +31,8 @@ measured pre-alpha with explicit `NOT_RUN` / `BLOCKED` rows.
 
 | Stage | Project | Question |
 |---|---|---|
+| Admit | [**walkaround**](https://github.com/taipei49314/walkaround) | Did this session enter a frozen task contract? |
+| Charter | [**charterlock**](https://github.com/taipei49314/charterlock) | Was the journey allowed to count as an exam? |
 | Measure | [**trust-meter**](https://github.com/taipei49314/trust-meter) | What does this checkout actually score from local evidence? |
 | Gate | [**phaseledger**](https://github.com/taipei49314/phaseledger) | Can this phase advance without a fresh deterministic `PASS`? |
 | Detect | [**greenwash**](https://github.com/taipei49314/greenwash) | Did an agent make CI green by weakening verification? |
@@ -51,10 +54,10 @@ Supporting evaluation surfaces:
 
 | Project | Current public status |
 |---|---|
-| [greenwash](https://github.com/taipei49314/greenwash) | [`v0.1.23`](https://github.com/taipei49314/greenwash/releases/tag/v0.1.23) — deterministic diff-level verification-tampering detector |
+| [greenwash](https://github.com/taipei49314/greenwash) | [`v0.1.24`](https://github.com/taipei49314/greenwash/releases/tag/v0.1.24) — deterministic diff-level verification-tampering detector. Tree is ahead of that tag. |
 | [nullbench](https://github.com/taipei49314/nullbench) | [`v0.7.0`](https://github.com/taipei49314/nullbench/releases/tag/v0.7.0) — pre-register decisions; score against chance; never backfill |
-| [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | [`v0.1.1-alpha.2`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.1.1-alpha.2) — measured lab release; `NOT_RUN` rows stay visible. GitHub “Latest” still points at rejected [`v0.1.0-grok-session`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.1.0-grok-session) |
-| [unasked](https://github.com/taipei49314/unasked) | [`v0.2.1`](https://github.com/taipei49314/unasked/releases/tag/v0.2.1) — non-certifying M0 investigation path |
+| [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | [`v0.2.0-alpha.1`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.2.0-alpha.1) — project-operated prerelease; `CANDIDATE_ONLY_NOT_RELEASE_AUTHORIZED`. GitHub “Latest” still points at rejected [`v0.1.0-grok-session`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.1.0-grok-session) |
+| [unasked](https://github.com/taipei49314/unasked) | [`v0.4.0`](https://github.com/taipei49314/unasked/releases/tag/v0.4.0) — authenticated trust plane; public result remains `M0_NOT_DEMONSTRATED` |
 | [null-city](https://github.com/taipei49314/null-city) | [`v0.1.0-alpha.1`](https://github.com/taipei49314/null-city/releases/tag/v0.1.0-alpha.1) — playable deterministic agent-evaluation sandbox (prerelease; no GitHub “Latest”) |
 | [receiptradar](https://github.com/taipei49314/receiptradar) | [`v0.1.0-cli.34`](https://github.com/taipei49314/receiptradar/releases/tag/v0.1.0-cli.34) — four-platform CLI release with packaged checksums |
 | [md-brain](https://github.com/taipei49314/md-brain) | [`v0.2.0`](https://github.com/taipei49314/md-brain/releases/tag/v0.2.0) — public prototype for model-independent Markdown continuity (prerelease; no GitHub “Latest”) |
@@ -69,17 +72,19 @@ Supporting evaluation surfaces:
 “Latest” pointed at
 [`v0.1.0-grok-session`](https://github.com/taipei49314/tomorrowci/releases/tag/v0.1.0-grok-session).
 That tag is a **rejected** historical candidate, not an acceptance claim.
-Current measured lab work lives in [`tomorrowci-lab`](https://github.com/taipei49314/tomorrowci-lab).
+Current lab publication lives in [`tomorrowci-lab`](https://github.com/taipei49314/tomorrowci-lab) as the `v0.2.0-alpha.1` candidate-only prerelease.
 
 ## Active qualification tracks
 
 | Project | Honest boundary |
 |---|---|
+| [walkaround](https://github.com/taipei49314/walkaround) | No release. M4 local kernel; receipts unsigned; `ADMITTED` is not verified work |
+| [charterlock](https://github.com/taipei49314/charterlock) | No release. `independence_claim` is always `not_claimed`; two MAC keys do not prove two people |
 | [trust-meter](https://github.com/taipei49314/trust-meter) | No release. Local scorer with batch/compare/API surfaces; self-audit only |
 | [phaseledger](https://github.com/taipei49314/phaseledger) | No release. Phase advance requires a fresh measurer `PASS`; reclaim invalidates later phases |
-| [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | Measured Linux Docker slices exist; Podman / Windows / macOS and independent authorization remain **BLOCKED** |
-| [RepoPassport](https://github.com/taipei49314/RepoPassport) | Working `v1alpha1` vertical slice; observer coverage remains `incomplete`, so healthy runs stay `inconclusive` |
-| [stateweaver](https://github.com/taipei49314/stateweaver) | Source-only pre-alpha; synthetic/local evidence exists, trusted Reality proof does not |
+| [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | Newest prerelease is `v0.2.0-alpha.1` and remains candidate-only. macOS / Windows clean-machine and independent authorization remain **BLOCKED** |
+| [RepoPassport](https://github.com/taipei49314/RepoPassport) | Working `v1alpha1` vertical slice; 37-row acceptance registry is machine-checked; observer coverage remains `incomplete`, so healthy runs stay `inconclusive` |
+| [stateweaver](https://github.com/taipei49314/stateweaver) | Source-only pre-alpha; M6–M8 implementation gates exist; trusted Reality proof does not |
 | [NormShift](https://github.com/taipei49314/NormShift) | M0 implemented; production and release remain blocked pending external audit |
 | [smallestlie](https://github.com/taipei49314/smallestlie) | Authorized adversarial harness; no release |
 | [nelsoncode-ide](https://github.com/taipei49314/nelsoncode-ide) | Personal preview; external security audit remains **NO-GO** for untrusted use |
@@ -125,4 +130,4 @@ kept private or archived when they stop being the active line. Market-related
 projects are paper-only research simulations, never broker or investment
 systems.
 
-<sub>Last portfolio reconciliation: 2026-08-12.</sub>
+<sub>Last portfolio reconciliation: 2026-08-14. Aligned with [`nelson-stack`](https://github.com/taipei49314/nelson-stack).</sub>
