@@ -87,7 +87,6 @@ Current lab publication lives in [`tomorrowci-lab`](https://github.com/taipei493
 | [stateweaver](https://github.com/taipei49314/stateweaver) | Source-only pre-alpha; M6–M8 implementation gates exist; trusted Reality proof does not |
 | [NormShift](https://github.com/taipei49314/NormShift) | M0 implemented; production and release remain blocked pending external audit |
 | [smallestlie](https://github.com/taipei49314/smallestlie) | Authorized adversarial harness; no release |
-| [nelsoncode-ide](https://github.com/taipei49314/nelsoncode-ide) | Personal preview; external security audit remains **NO-GO** for untrusted use |
 | [constraint-deck](https://github.com/taipei49314/constraint-deck) | Public source; measure-first voice contract; no release yet |
 | [editorial-doll-engineering-preview](https://github.com/taipei49314/editorial-doll-engineering-preview) | Public M0–M3 engineering preview of a deterministic styling engine; no release yet |
 | [universe-explorer](https://github.com/taipei49314/universe-explorer) | Public epistemically honest science knowledge system; no release yet |
@@ -98,6 +97,7 @@ Current lab publication lives in [`tomorrowci-lab`](https://github.com/taipei493
 
 | Project | What it does |
 |---|---|
+| [nelsoncode-ide](https://github.com/taipei49314/nelsoncode-ide) | Off-mainline optional personal AI coding preview; external security audit remains **NO-GO** for untrusted use |
 | [receiptradar](https://github.com/taipei49314/receiptradar) | Receipt-to-ledger CLI with no cloud account |
 | [md-brain](https://github.com/taipei49314/md-brain) | Model-independent continuity runtime for Markdown memory |
 | [github-radar](https://github.com/taipei49314/github-radar) | GitHub research with measured uncertainty and zero runtime dependencies |
