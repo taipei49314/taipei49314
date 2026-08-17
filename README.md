@@ -25,6 +25,11 @@ The active line is **admit, then measure**:
 No GitHub Release for `walkaround` / `charterlock` / `trust-meter` / `phaseledger`.
 Lab publication remains a measured pre-alpha with explicit `NOT_RUN` / `BLOCKED` rows.
 
+The flagship is that audit spine, not a demo. First CI-backed public
+subject: [`cell-shift`](https://github.com/taipei49314/cell-shift)
+(CELL//SHIFT). Frozen journey and external receipts live in that repo.
+The chamber's own tests are not the spine verdict.
+
 ## The audit loop
 
 ![Audit loop with honest gaps](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/audit-loop.gif)
@@ -54,6 +59,7 @@ Supporting evaluation surfaces:
 
 | Project | Current public status |
 |---|---|
+| [cell-shift](https://github.com/taipei49314/cell-shift) | Public subject, not the flagship. Deterministic 3D tissue chamber (CELL//SHIFT). Maintenance-only. Host CI is green; spine `verify` is not claimed. Not biology. |
 | [greenwash](https://github.com/taipei49314/greenwash) | [`v0.1.41`](https://github.com/taipei49314/greenwash/releases/tag/v0.1.41) — deterministic diff-level verification-tampering detector. At the 2026-08-15 reconciliation, `main` was one README-only Action-pin commit ahead of that tag. |
 | [nullbench](https://github.com/taipei49314/nullbench) | [`v0.7.0`](https://github.com/taipei49314/nullbench/releases/tag/v0.7.0) — pre-register decisions; score against chance; never backfill |
 | [tomorrowci-lab](https://github.com/taipei49314/tomorrowci-lab) | [`v0.2.0-alpha.1`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.2.0-alpha.1) — project-operated prerelease; `CANDIDATE_ONLY_NOT_RELEASE_AUTHORIZED`. GitHub “Latest” still points at rejected [`v0.1.0-grok-session`](https://github.com/taipei49314/tomorrowci-lab/releases/tag/v0.1.0-grok-session) |
@@ -130,4 +136,4 @@ kept private or archived when they stop being the active line. Market-related
 projects are paper-only research simulations, never broker or investment
 systems.
 
-<sub>Last portfolio reconciliation: 2026-08-15. Aligned with [`nelson-stack`](https://github.com/taipei49314/nelson-stack).</sub>
+<sub>Last portfolio reconciliation: 2026-08-17. Aligned with [`nelson-stack`](https://github.com/taipei49314/nelson-stack).</sub>
