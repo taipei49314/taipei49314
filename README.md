@@ -10,6 +10,20 @@ developer workflows.
 
 [Explore the full Nelson Stack →](https://github.com/taipei49314/nelson-stack)
 
+## Frontier Atlas public test
+
+[`frontier-atlas-open-tests`](https://github.com/taipei49314/frontier-atlas-open-tests)
+is the **only public Frontier Atlas surface**. It exposes an offline protocol
+verifier, schemas, blind non-gold calibration packets, and a constrained issue
+intake for reproducible public testing.
+
+[![Frontier Atlas offline tests](https://github.com/taipei49314/frontier-atlas-open-tests/actions/workflows/offline-tests.yml/badge.svg)](https://github.com/taipei49314/frontier-atlas-open-tests/actions/workflows/offline-tests.yml)
+
+The product runtime and research mainline remain private. Hidden labels,
+qualification keys, human records, and future sealed holdout authority remain
+offline. Public visibility grants neither an open-source license nor a model,
+contributor, product, or release a passing status.
+
 ![Admission then measure — unsigned walkaround, refused advance](https://raw.githubusercontent.com/taipei49314/nelson-stack/main/docs/attach.gif)
 
 ## Now
@@ -59,12 +73,13 @@ Supporting evaluation surfaces:
 
 ## Measured public surfaces
 
-The public surface currently contains **25 active project repositories plus
+The public surface currently contains **26 active project repositories plus
 two meta repositories** (`taipei49314` and `nelson-stack`). Private tools are
 intentionally omitted from this page.
 
 | Project | Current public status |
 |---|---|
+| [frontier-atlas-open-tests](https://github.com/taipei49314/frontier-atlas-open-tests) | Public offline protocol and blind test surface. No open-source grant, gold authority, production verdict, or release claim. Product and authority components remain private or offline. |
 | [cell-shift](https://github.com/taipei49314/cell-shift) | Public subject, not the flagship. Deterministic 3D tissue chamber (CELL//SHIFT). Maintenance-only. Host CI is green; spine `verify` is not claimed. Not biology. |
 | [greenwash](https://github.com/taipei49314/greenwash) | GitHub Latest is [`v0.1.42`](https://github.com/taipei49314/greenwash/releases/tag/v0.1.42). `main` identifies as `v0.1.43` and remains ahead of that release after the 2026-08-19 audit round. |
 | [nullbench](https://github.com/taipei49314/nullbench) | [`v0.7.0`](https://github.com/taipei49314/nullbench/releases/tag/v0.7.0) — pre-register decisions; score against chance; never backfill |
@@ -132,4 +147,4 @@ kept private or archived when they stop being the active line. Market-related
 projects are paper-only research simulations, never broker or investment
 systems.
 
-<sub>Last portfolio reconciliation: 2026-08-21. Aligned with [`nelson-stack`](https://github.com/taipei49314/nelson-stack).</sub>
+<sub>Last portfolio reconciliation: 2026-08-28. Aligned with [`nelson-stack`](https://github.com/taipei49314/nelson-stack).</sub>
