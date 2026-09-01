@@ -1,82 +1,38 @@
-# Nelson — evidence-first agent systems
+# Nelson
 
-I build **local-first, deterministic, auditable** tools for AI agents and
-developer workflows.
+模型可以提案。驗證器才算數。沒有證據，就寫不知道。
 
-我在台灣打造本機優先、可重播、可稽核的 AI agent 與開發工具。
+I build local tools that decide from evidence, not from a model's confidence.
 
-> **Models may propose. Verifiers decide. Missing evidence stays
-> `UNKNOWN` / `INCOMPLETE`.**
+## 現在公開的
 
-## Current focus: checkwash
+| 專案 | 做什麼 | 不做什麼 |
+|---|---|---|
+| [**checkwash**](https://github.com/taipei49314/checkwash) | Agent 把測試改鬆、讓 CI 變綠時，在 merge 前抓住它 | 不跑你的測試，不呼叫 LLM |
+| [**checkwash-corpus**](https://github.com/taipei49314/checkwash-corpus) | checkwash 拿來量對錯的真實 git 歷史 | 不是引擎本身 |
+| [**nullbench**](https://github.com/taipei49314/nullbench) | 先登記決定，再跟「亂選」比分數 | 不准事後改答案，不預測樂透 |
+| [**aurora**](https://github.com/taipei49314/aurora) | 從專利、招聘、新聞等證據找還沒被命名的產業 | 不跑 LLM，不給進出場 |
+| [**branchback**](https://github.com/taipei49314/branchback) | 把「當時相信什麼」留下來，有結果之後再對 | 不上雲，不給 AI 建議 |
+| [**frontier-atlas-open-tests**](https://github.com/taipei49314/frontier-atlas-open-tests) | Frontier Atlas 的公開考卷 | 不是產品，過關不了 |
 
-[checkwash](https://github.com/taipei49314/checkwash) catches the agent that
-made CI green by weakening the tests. Deterministic, zero-LLM, zero-network,
-reads the diff rather than the code state. Public bypass list included.
+私有專案不列在這裡。
 
-[![CI](https://github.com/taipei49314/checkwash/actions/workflows/ci.yml/badge.svg)](https://github.com/taipei49314/checkwash/actions/workflows/ci.yml)
+## 先試這個
 
-The public line is frozen at **v0.2.8**. New work belongs in an existing
-repository; a second independent user of checkwash is the gate before that
-freeze lifts.
+```bash
+curl -LO https://github.com/taipei49314/checkwash/releases/latest/download/checkwash.pyz
+python checkwash.pyz demo
+```
 
-## Frontier Atlas (private)
+離線、不用安裝、八個真實篡改案例。checkwash 目前停在 **v0.2.8**。
 
-Frontier Atlas is a private product and research line for auditing whether an
-agent's claim is actually supported by its cited evidence.
+## 怎麼判斷
 
-[`frontier-atlas-open-tests`](https://github.com/taipei49314/frontier-atlas-open-tests)
-is its public, offline test surface:
+1. 主張要指到檔案、測試、diff，或明講證據不夠。
+2. 沒看到，就不算過。
+3. 同一份凍結證據，重跑要同一答案。
+4. 模型不能自己幫自己放行。
+5. 失敗結果留著，不准改寫成成功。
+6. 不准再開新的 GitHub repo。點子進現有專案，或等。
 
-- bounded claim–citation audit schemas;
-- deterministic protocol and identity verification;
-- blind, non-gold calibration packets;
-- commit → reveal → adjudication workflows;
-- reproducible public issue intake.
-
-[![Frontier Atlas offline tests](https://github.com/taipei49314/frontier-atlas-open-tests/actions/workflows/offline-tests.yml/badge.svg)](https://github.com/taipei49314/frontier-atlas-open-tests/actions/workflows/offline-tests.yml)
-
-The current release stage is **P4.5-T: external tester preparation**. Promotion
-still requires a second, independent natural person; that rule is not replaced
-by two models, two sessions, or two signing keys.
-
-Public visibility grants neither a passing result nor access to private product
-core, hidden labels, qualification keys, human records, or sealed holdout
-authority. A repository is open source only when its own license explicitly
-says so.
-
-## Public tools
-
-Only repositories that are public today. Private research stays unlisted.
-
-| Project | Purpose |
-|---|---|
-| [**checkwash**](https://github.com/taipei49314/checkwash) | Detects when an agent makes CI green by weakening verification |
-| [**checkwash-corpus**](https://github.com/taipei49314/checkwash-corpus) | Real-world measurement corpus for checkwash |
-| [**frontier-atlas-open-tests**](https://github.com/taipei49314/frontier-atlas-open-tests) | Public offline qualification and semantic-audit test surface |
-| [**nullbench**](https://github.com/taipei49314/nullbench) | Pre-registers decisions and scores them against chance |
-| [**aurora**](https://github.com/taipei49314/aurora) | Evidence-led industry discovery without an LLM at runtime |
-| [**branchback**](https://github.com/taipei49314/branchback) | Replays belief-at-the-time against knowledge-now |
-
-## Engineering rules
-
-1. **Evidence over confidence.** Claims point to exact citations, tests, diffs,
-   logs, artifacts, or an explicit insufficient-data result.
-2. **Fail closed.** Missing observation is not a pass.
-3. **Deterministic first.** The same frozen evidence should produce the same
-   mechanical result.
-4. **Authority stays separate.** A model can propose; it cannot silently grant
-   review, qualification, or release authority to itself.
-5. **Keep negative results.** Blocked gates and counterexamples remain visible
-   rather than being rewritten as success.
-6. **Measure cost with real denominators.** Speed, token, and accuracy claims
-   wait for reproducible benchmark data.
-7. **Do not open a new repository.** Work lands in an existing one, or it waits.
-
-## Stack
-
-`Python` · `Rust` · `Go` · `TypeScript` · `FastAPI` · `React` ·
-`SQLite` · offline-first CLI workflows
-
-<sub>Public portfolio reconciled 2026-09-02. Current status: checkwash frozen at
-v0.2.8; new repositories are closed.</sub>
+<sub>公開索引 2026-09-02 對過 `public-index`。只列真正 public 的 repo。</sub>
