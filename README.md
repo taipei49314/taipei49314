@@ -8,7 +8,19 @@ developer workflows.
 > **Models may propose. Verifiers decide. Missing evidence stays
 > `UNKNOWN` / `INCOMPLETE`.**
 
-## Current focus: Frontier Atlas
+## Current focus: checkwash
+
+[checkwash](https://github.com/taipei49314/checkwash) catches the agent that
+made CI green by weakening the tests. Deterministic, zero-LLM, zero-network,
+reads the diff rather than the code state. Public bypass list included.
+
+[![CI](https://github.com/taipei49314/checkwash/actions/workflows/ci.yml/badge.svg)](https://github.com/taipei49314/checkwash/actions/workflows/ci.yml)
+
+The public line is frozen at **v0.2.8**. New work belongs in an existing
+repository; a second independent user of checkwash is the gate before that
+freeze lifts.
+
+## Frontier Atlas (private)
 
 Frontier Atlas is a private product and research line for auditing whether an
 agent's claim is actually supported by its cited evidence.
@@ -28,13 +40,6 @@ The current release stage is **P4.5-T: external tester preparation**. Promotion
 still requires a second, independent natural person; that rule is not replaced
 by two models, two sessions, or two signing keys.
 
-The planned path is:
-
-`external qualification` → `double-blind pilot + real-source calibration` →
-`private judge/token optimization` → `development benchmark` →
-`sealed holdout` → `black-box closed beta` → `release candidate` →
-`external evidence review` → `production`
-
 Public visibility grants neither a passing result nor access to private product
 core, hidden labels, qualification keys, human records, or sealed holdout
 authority. A repository is open source only when its own license explicitly
@@ -42,17 +47,16 @@ says so.
 
 ## Public tools
 
+Only repositories that are public today. Private research stays unlisted.
+
 | Project | Purpose |
 |---|---|
+| [**checkwash**](https://github.com/taipei49314/checkwash) | Detects when an agent makes CI green by weakening verification |
+| [**checkwash-corpus**](https://github.com/taipei49314/checkwash-corpus) | Real-world measurement corpus for checkwash |
 | [**frontier-atlas-open-tests**](https://github.com/taipei49314/frontier-atlas-open-tests) | Public offline qualification and semantic-audit test surface |
-| [**greenwash**](https://github.com/taipei49314/greenwash) | Detects when an agent makes CI green by weakening verification |
 | [**nullbench**](https://github.com/taipei49314/nullbench) | Pre-registers decisions and scores them against chance |
-| [**trust-meter**](https://github.com/taipei49314/trust-meter) | Deterministic, evidence-backed trust scoring |
-| [**unasked**](https://github.com/taipei49314/unasked) | Evidence-gated repository investigation; non-certifying |
-| [**branchback**](https://github.com/taipei49314/branchback) | Replays belief-at-the-time against knowledge-now |
 | [**aurora**](https://github.com/taipei49314/aurora) | Evidence-led industry discovery without an LLM at runtime |
-| [**receiptradar**](https://github.com/taipei49314/receiptradar) | Local receipt-to-ledger CLI with no cloud account |
-| [**universe-explorer**](https://github.com/taipei49314/universe-explorer) | Epistemically honest science knowledge system |
+| [**branchback**](https://github.com/taipei49314/branchback) | Replays belief-at-the-time against knowledge-now |
 
 ## Engineering rules
 
@@ -67,11 +71,12 @@ says so.
    rather than being rewritten as success.
 6. **Measure cost with real denominators.** Speed, token, and accuracy claims
    wait for reproducible benchmark data.
+7. **Do not open a new repository.** Work lands in an existing one, or it waits.
 
 ## Stack
 
 `Python` · `Rust` · `Go` · `TypeScript` · `FastAPI` · `React` ·
 `SQLite` · offline-first CLI workflows
 
-<sub>Public portfolio reconciled 2026-08-29. Current status: preparing Frontier
-Atlas for public semantic-audit testing.</sub>
+<sub>Public portfolio reconciled 2026-09-02. Current status: checkwash frozen at
+v0.2.8; new repositories are closed.</sub>
