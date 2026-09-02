@@ -10,6 +10,8 @@ I build local tools that decide from evidence, not from a model's confidence.
 |---|---|---|
 | [**checkwash**](https://github.com/taipei49314/checkwash) | Agent 把測試改鬆、讓 CI 變綠時，在 merge 前抓住它 | 不跑你的測試，不呼叫 LLM |
 | [**checkwash-corpus**](https://github.com/taipei49314/checkwash-corpus) | checkwash 拿來量對錯的真實 git 歷史 | 不是引擎本身 |
+| [**smallestlie**](https://github.com/taipei49314/smallestlie) | 對自己授權的 repo 出招，找 verifier 還會吞下的最小謊言 | 不掃別人的 repo，不說任何東西「安全」 |
+| [**tripwire**](https://github.com/taipei49314/tripwire) | 把裁判用 git tag 釘進 agent host：hooks 擋、MCP 查、skills 教 | 不擁有偵測邏輯，不改裁判 |
 | [**nullbench**](https://github.com/taipei49314/nullbench) | 先登記決定，再跟「亂選」比分數 | 不准事後改答案，不預測樂透 |
 | [**aurora**](https://github.com/taipei49314/aurora) | 從專利、招聘、新聞等證據找還沒被命名的產業 | 不跑 LLM，不給進出場 |
 | [**branchback**](https://github.com/taipei49314/branchback) | 把「當時相信什麼」留下來，有結果之後再對 | 不上雲，不給 AI 建議 |
@@ -24,7 +26,7 @@ curl -LO https://github.com/taipei49314/checkwash/releases/latest/download/check
 python checkwash.pyz demo
 ```
 
-離線、不用安裝、八個真實篡改案例。checkwash 目前停在 **v0.2.8**。
+離線、不用安裝、八個真實篡改案例。checkwash 目前停在 **v0.2.10**。
 
 ## 怎麼判斷
 
