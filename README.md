@@ -26,7 +26,7 @@ curl -LO https://github.com/taipei49314/checkwash/releases/latest/download/check
 python checkwash.pyz demo
 ```
 
-離線、不用安裝、八個真實篡改案例。checkwash 目前停在 **v0.2.10**。
+離線、不用安裝、八個真實篡改案例。版本以 PyPI 為準：![PyPI](https://img.shields.io/pypi/v/checkwash.svg)
 
 ## 怎麼判斷
 
