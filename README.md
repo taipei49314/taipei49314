@@ -17,10 +17,6 @@ Tools that check whether tests, diffs, and environments still prove what they cl
   - **[checkwash-prove](https://github.com/taipei49314/checkwash-prove)** *(experimental · [PyPI](https://pypi.org/project/checkwash-prove/))* — 反向以具體故障實際執行測試，驗證測試變更是否丟失保護力 / Runs tests against concrete faults to show what protection a test change dropped.
   - **[checkwash-corpus](https://github.com/taipei49314/checkwash-corpus)** — 用於量測 `checkwash` 的真實 Git 歷史語料 / Real Git history corpus used to measure `checkwash`.
 
-- **[tomorrowci](https://github.com/taipei49314/tomorrowci)** *(Rust · experimental public slices)*  
-  在具體的未來相依與執行環境中測試專案，找出最早破壞相容性的最小變更並保留可重放證據。  
-  Runs tests against concrete future environments to isolate breakage-inducing changes with replayable compatibility evidence.
-
 ---
 
 ## Visual & Interactive Works · 視覺與互動作品
