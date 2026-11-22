@@ -16,7 +16,11 @@ Indie developer in Taipei building lightweight, trustworthy everyday dev tools a
   送 commit 或開 PR 前快速掃一下 Git diff，幫你抓出測試被不小心刪掉、跳過或寫鬆的地方（特別適合搭配 AI 寫程式時用）。  
   Scans your Git diff locally to catch accidentally dropped, skipped, or weakened tests before you commit or merge.
   - **[checkwash-prove](https://github.com/taipei49314/checkwash-prove)** *([PyPI](https://pypi.org/project/checkwash-prove/))* — 用實際故障測試你的改動是不是讓原本抓得到的 bug 漏掉了 / Runs concrete fault checks to see if a test edit dropped real protection.
-  - **checkwash-lens** *(coming soon)* — 直接放進 VS Code 側邊欄的即時檢查工具 / VS Code sidebar extension for one-click diff & pre-commit checks.
+  - **[checkwash-lens](https://github.com/taipei49314/checkwash-lens)** *(VS Code · [Releases](https://github.com/taipei49314/checkwash-lens/releases))* — 直接放進 VS Code 側邊欄的即時檢查工具（Win/Linux/WSL2/Dev Containers）/ VS Code sidebar extension for one-click diff & pre-commit checks.
+
+- **[boundary-unpack](https://github.com/taipei49314/boundary-unpack)** *(Linux · Rust + Python · [Releases](https://github.com/taipei49314/boundary-unpack/releases))*  
+  在 Linux 上用 `seccomp`、`cgroup v2`、Rust broker 與原子發布安全解壓不可信的 `.zip` / `.tar.gz`，防路徑穿越、炸彈與殘留髒檔。  
+  Safely extract untrusted `.zip` and `.tar.gz` archives on Linux inside a `seccomp` + `cgroup v2` sandbox with a Rust `openat2` broker and atomic `renameat2` publication.
 
 - **dllwhy** *(coming soon)*  
   Windows 上 Python 跳 `DLL load failed` 時，一條指令告訴你到底缺了哪個 DLL。  
