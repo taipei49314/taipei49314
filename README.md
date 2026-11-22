@@ -1,30 +1,39 @@
-# Nelson · @taipei49314
+# Hi, I'm Nelson (@taipei49314) 👋
 
-**本機優先、證據優先 — models propose, verifiers decide.**  
-Independent developer in Taipei. Building local-first, deterministic verification tools for software changes and interactive visual works built around one idea: **對得上** (*every stroke has to line up*).
+在台北的獨立開發者，喜歡持續做兩類東西：
+- **日常用得上的開發小工具** — 輕量、本機跑、不追蹤，幫大家省下踩雷的時間。
+- **打開就能玩或看的互動作品** — 3D 視覺、短篇互動敘事、數位造型體驗。
 
-🌐 **Site & Works:** [taipei49314.github.io](https://taipei49314.github.io/)
+Indie developer in Taipei building lightweight, trustworthy everyday dev tools and interactive visual works. Feel free to explore, try them out, or open an issue to say hi!
 
----
-
-## Verification & Evidence · 驗證與防弱化工具
-
-Tools that check whether tests, diffs, and environments still prove what they claim—locally, deterministically, and with replayable evidence.
-
-- **[checkwash](https://github.com/taipei49314/checkwash)** *(Python · pre-1.0 · [PyPI](https://pypi.org/project/checkwash/))*  
-  靜態讀取 Git diff，標出刪除斷言、放寬條件、略過測試與弱化 CI 等已知模式（本地執行、無 LLM、不執行待測程式碼）。  
-  Flags known patterns of weakened tests and CI checks in a Git diff—locally, with no LLM and without executing your code.
-  - **[checkwash-prove](https://github.com/taipei49314/checkwash-prove)** *(experimental · [PyPI](https://pypi.org/project/checkwash-prove/))* — 反向以具體故障實際執行測試，驗證測試變更是否丟失保護力 / Runs tests against concrete faults to show what protection a test change dropped.
-  - **[checkwash-corpus](https://github.com/taipei49314/checkwash-corpus)** — 用於量測 `checkwash` 的真實 Git 歷史語料 / Real Git history corpus used to measure `checkwash`.
+🌐 **Portfolio / 個人作品頁:** [taipei49314.github.io](https://taipei49314.github.io/)
 
 ---
 
-## Visual & Interactive Works · 視覺與互動作品
+## 🛠️ Developer Tools · 開發工具
 
-- **[starry-night-3d](https://github.com/taipei49314/starry-night-3d)** · **[Live Demo](https://taipei49314.github.io/starry-night-3d/)** *(TypeScript · Three.js)*  
-  《星夜，只在一個點成立》— 約 18.1 萬筆程序化筆觸散布在最深 250 公里的 3D 空間，唯有站在畫家視點 *E* 才拼回梵谷《星夜》。  
-  *The Starry Night, from One Viewpoint* — ~181k procedural brushstrokes across a 250 km deep anamorphic 3D space that align into Van Gogh's painting from a single viewpoint *E*.
+- **[checkwash](https://github.com/taipei49314/checkwash)** *(Python · [PyPI](https://pypi.org/project/checkwash/))*  
+  送 commit 或開 PR 前快速掃一下 Git diff，幫你抓出測試被不小心刪掉、跳過或寫鬆的地方（特別適合搭配 AI 寫程式時用）。  
+  Scans your Git diff locally to catch accidentally dropped, skipped, or weakened tests before you commit or merge.
+  - **[checkwash-prove](https://github.com/taipei49314/checkwash-prove)** *([PyPI](https://pypi.org/project/checkwash-prove/))* — 用實際故障測試你的改動是不是讓原本抓得到的 bug 漏掉了 / Runs concrete fault checks to see if a test edit dropped real protection.
+  - **checkwash-lens** *(coming soon)* — 直接放進 VS Code 側邊欄的即時檢查工具 / VS Code sidebar extension for one-click diff & pre-commit checks.
 
-- **[taipei49314.github.io](https://github.com/taipei49314/taipei49314.github.io)** · **[Visit Site](https://taipei49314.github.io/)** *(Plain HTML / CSS / JS)*  
-  雙語個人作品頁（零框架、零第三方請求），一併收錄 `checkwash`、《星夜》、*Editorial Doll*（未公開散發）與《沙下迴廊》*The Returning Passage*（製作中）的互動展示與說明。  
-  Bilingual personal showcase built with zero frameworks or third-party requests.
+- **dllwhy** *(coming soon)*  
+  Windows 上 Python 跳 `DLL load failed` 時，一條指令告訴你到底缺了哪個 DLL。  
+  One-command, no-admin diagnostic tool that tells you which DLL is missing when a Python import fails on Windows.
+
+---
+
+## ✨ Interactive & Visual Works · 互動與視覺作品
+
+- **[starry-night-3d](https://github.com/taipei49314/starry-night-3d)** · **[Live Demo](https://taipei49314.github.io/starry-night-3d/)**  
+  把梵谷《星夜》拆成約 18 萬筆 3D 筆觸撒在 250 公里深的空間裡——從旁邊看是一片星塵，只有回到畫家的視點 *E* 才會拼回整幅畫。  
+  Van Gogh's *The Starry Night* scattered as ~181k 3D brushstrokes across 250 km of depth—lining up into the painting from one single viewpoint *E*.
+
+- **沙下迴廊 · The Returning Passage** *(coming soon)*  
+  一部 3 分鐘、戴上耳機靜靜看的雙語第一人稱互動短篇與 3D 光影空間展示。  
+  A 3-minute bilingual interactive short and 3D light-and-space showcase—best experienced with headphones.
+
+- **Editorial Doll** *(coming soon)*  
+  免登入、打開瀏覽器就能自由搭配服飾並匯出高解析海報的數位造型室。  
+  A browser-based digital styling studio for composing editorial looks and exporting high-resolution posters—no account required.
